@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chake your love score</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+        .container-box{
+            width: 100%;
+            height: 100vh;
+            background-image: url(loveimg.jpg);
+            background-position: center;
+            background-size: cover;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .output{
+            font-size: 25px;
+         position: absolute;
+         width:80%;
+         bottom: 15%;
+        }
+        span{
+            font-size: 28px;
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: 5%;
+        width: 102%;
+        height: 7vh;
+        background: linear-gradient(90deg,rgba(45, 52, 54, 0.696),rgba(238, 90, 161, 0.614), rgba(45, 52, 54, 0.701));
+       }
+    </style>
+</head>
+<body>
+    <div class="container-box">
+        <div class="output">
+        <script>
+    
+    var myName = prompt("Enter 1st name---To chake your love score");
+         var get1stLetter = myName.slice(0 , 1);
+         var capital1stLetter = get1stLetter.toUpperCase();
+         var restName =  myName.slice(1 , myName.length);
+         var smallRestLetter = restName.toLowerCase();
+         var capital_Smallname = capital1stLetter + smallRestLetter ;
+
+         var yourName = prompt("Enter 2nd name");
+         var get2ndLetter = yourName.slice(0 , 1);
+         var capital2ndLetter =  get2ndLetter.toUpperCase();
+         var restOfName = yourName.slice(1 ,myName.length);
+         var smallRestOfLetter =restOfName.toLowerCase();
+         var capitalOf_Smallname =capital2ndLetter +  smallRestOfLetter ;
+
+
+
+         var loveScores = Math.random();
+
+         loveScores = loveScores * 100;
+         loveScores = Math.floor(loveScores) +1;
+         document.write(capital_Smallname + "  and  " + capitalOf_Smallname + "  your love score is  " + loveScores + "%  ......");
+         </script><span>&#10084;&#65039;</span>
+         </div>
+         <div class="footer">
+            <marquee behavior="600" direction="right" >-----This page is created by sagar masale-----</marquee>
+        </div>
+    </div>
+    
+</body>
+</html>
